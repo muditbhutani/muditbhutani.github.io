@@ -1,0 +1,12 @@
+<iframe data-widget-name="" name="TickerTape" src="https://darqube.com/external-embedding/ticker-tape?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ3aWRnZXQiOnsiYXNzZXRfY2xhc3NlcyI6WyJJTkRFWEVTIiwiU1RPQ0tTIiwiRk9SRVgiXX0sIndfdHlwZSI6IlRpY2tlclRhcGUiLCJmZV9jZmciOnsiY21vZGUiOjAsImZjbHIiOiJyZ2JhKDI1NSwgMjU1LCAyNTUsIDEpIiwiYmciOiJyZ2JhKDIxLCAyNSwgMzAsIDEpIiwiaCI6MzczLCJ3IjoxMTAwLCJhc3oiOnRydWUsImZ0IjoiZGVmYXVsdCIsImh0Ijoibm9uZSIsInRyaCI6W10sImNoYyI6InJnYmEoMjM3LCA1MCwgOTgsIDEpIiwiYmUiOmZhbHNlLCJiYyI6InJnYmEoMjU1LDI1NSwyNTUsMC4xKSIsImJ3IjoxLCJjbiI6IiIsImxuZyI6ImVuIiwiY3RybHQiOjEsImhkaWNuIjpmYWxzZSwid3RtViI6eyJ0eXBlIjoiRGFycXViZSIsImVuYWJsZWQiOnRydWV9LCJ1YyI6InJnYmEoNDgsIDEzMSwgMTA5LCAxKSIsImRjIjoicmdiYSgyMzcsIDUwLCA5OCwgMSkiLCJjdHJsdiI6MSwic21iIjpbeyJuIjoiRVVSL1VTRCIsInQiOiJFVVJVU0QuT0FOREEifSx7Im4iOiJHQlAvVVNEIiwidCI6IkdCUFVTRC5PQU5EQSJ9LHsibiI6IkJUQyIsInQiOiJCVENVU0RULkJJTkFOQ0UifSx7Im4iOiJFVEgiLCJ0IjoiRVRIVVNEVC5CSU5BTkNFIn0seyJuIjoiR29sZCIsInQiOiJYQVVVU0QuT0FOREEifSx7Im4iOiJTaWx2ZXIiLCJ0IjoiWEFHVVNELk9BTkRBIn0seyJuIjoiQUFQTCIsInQiOiJBQVBMLlVTIn0seyJuIjoiVFNMQSIsInQiOiJUU0xBLlVTIn0seyJuIjoiTVNGVCIsInQiOiJNU0ZULlVTIn0seyJuIjoiQU1aTiIsInQiOiJBTVpOLlVTIn0seyJuIjoiVVNEL0pQWSIsInQiOiJVU0RKUFkuT0FOREEifV0sIm9wbiI6dHJ1ZX0sImV4cCI6MTY3NzUyNjUyNiwic3ViIjoiYWNjZXNzIn0.2dSaCWbw8f8PhkbanJ-9wC3ADhasq0iwg60l8vcO1BQ" id="TickerTape" width="100%" height="373"></iframe>
+      <script>
+        window.top.addEventListener("message", function(msg) {
+          const tickerTape = document.getElementById('TickerTape');
+          const height = msg.data?.tickerTapeHeight
+          
+          if (tickerTape && height) {
+            tickerTape.height = height
+          }
+        });
+      </script>
+    
